@@ -16,3 +16,5 @@ const quotes = [
     author: "Travis Bickle"
     }
 ];
+
+export default quotes;
