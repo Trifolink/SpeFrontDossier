@@ -16,9 +16,9 @@ function Quote(props) {
 
 function App() {
   const citations = [
-    { texte: "Dans le doute pied au plancher", auteur: "cgrand tourismo" },
-    { texte: "qelque chose en l'aire fini par tombe par terre FORT", auteur: "yooouuutoonne" },
-    { texte: "ne met pas tes doigts dans la porte tu risque de te faire mal", auteur: "Un lapin rose" }
+    { texte: "Dans le doute pied au plancher", auteur: "Grand tourismo" },
+    { texte: "Qelque chose en l'aire fini par tombe par terre FORT", auteur: "Yooouuutoonne" },
+    { texte: "Ne met pas tes doigts dans la porte tu risque de te faire mal", auteur: "Un lapin rose" }
   ];
 
   return (
