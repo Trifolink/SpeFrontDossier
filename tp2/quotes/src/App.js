@@ -5,27 +5,30 @@ function Quote(props) {
   return (
     <>
       <div>
-        Texte : {props.texte}
+        Texte : {props.text}
       </div>
       <div>
-        Auteur : {props.auteur}
+        Auteur : {props.author}
       </div>
     </>
   );
 }
 
 function App() {
-  const citations = [
-    { texte: "Dans le doute pied au plancher", auteur: "Grand tourismo" },
-    { texte: "Qelque chose en l'aire fini par tombe par terre FORT", auteur: "Yooouuutoonne" },
-    { texte: "Ne met pas tes doigts dans la porte tu risque de te faire mal", auteur: "Un lapin rose" }
+  const quotes = [
+    { id: 14, text: "Elementary, my dear Watson", author: "Sherlock Holmes" },
+    { id: 56, text: "I think therefore I am", author: "Rene Descartes" },
+    { id: 3, text: "Big Brother is watching you", author: "George Orwell" },
+    { id: 41, text: "You talkin' to me?", author: "Travis Bickle" }
   ];
 
   return (
     <div className="App">
-      <h1>Mes citations MaGniFique !</h1>
-      {citations.map((citation, index) => (
-        <Quote key={index} texte={citation.texte} auteur={citation.auteur} />
+      <h1>
+        Mes citations !
+      </h1>
+      {quotes.map((quote) => (
+        <Quote key={quote.id} text={quote.text} author={quote.author} />
       ))}
     </div>
   );
