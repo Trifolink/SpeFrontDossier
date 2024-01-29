@@ -23,7 +23,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Mes citations !</h1>
+      <h1>Mes citations MaGniFique !</h1>
       {citations.map((citation, index) => (
         <Quote key={index} texte={citation.texte} auteur={citation.auteur} />
       ))}
