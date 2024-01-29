@@ -16,9 +16,9 @@ function Quote(props) {
 
 function App() {
   const citations = [
-    { texte: "Elementary, my dear Watson", auteur: "Sherlock Holmes" },
-    { texte: "May the Force be with you", auteur: "Obi-Wan Kenobi" },
-    { texte: "To infinity and beyond!", auteur: "Buzz Lightyear" }
+    { texte: "quel belle citation", auteur: "ca c moi" },
+    { texte: "qelque chose en l'aire fini par tombe par terre FORT", auteur: "yooouuutoonne" },
+    { texte: "ne met pas tes doigts dans la porte tu risque de te faire mal", auteur: "Un lapin rose" }
   ];
 
   return (
