@@ -1,4 +1,5 @@
-const quotes = [
+export function getQuotes() {
+    return [
 {
     id: 14, text: "Elementary, my dear Watson",
     author: "Sherlock Holmes"
@@ -16,5 +17,6 @@ const quotes = [
     author: "Travis Bickle"
     }
 ];
+}
 
-export default quotes;
+export default getQuotes;

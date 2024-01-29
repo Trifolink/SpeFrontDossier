@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import quotes from './Data/data';
+import getQuotes from './Data/data';
 
 function Quote(props) {
   return (
@@ -17,6 +17,7 @@ function Quote(props) {
 }
 
 function App() {
+  const quotes = getQuotes();
 
 
   return (
