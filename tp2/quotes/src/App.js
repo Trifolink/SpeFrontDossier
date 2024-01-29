@@ -25,7 +25,7 @@ function App() {
         Mes citations !
       </h1>
       {quotes.map((quote) => (
-        <Quote key={quote.id} text={quote.text} author={quote.author} />
+        <Quote {...quote} />
       ))}
     </div>
   );
