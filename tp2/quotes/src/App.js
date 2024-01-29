@@ -1,39 +1,36 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
 function Quote(props) {
-  const { text, author } = props;
-
   return (
     <>
       <div>
-        Texte : {text}
+        Texte : {props.texte}
       </div>
       <div>
-        Auteur : {author}
+        Auteur : {props.auteur}
       </div>
     </>
   );
 }
 
-  const citation1 = {
-    text: "Première citation",
-    author: "Auteur 1"
-  };
-
-  const citation2 = {
-    text: "Deuxième citation",
-    author: "Auteur 2"
-  };
-
 function App() {
+  const citations = [
+    { texte: "Elementary, my dear Watson", auteur: "Sherlock Holmes" },
+    { texte: "May the Force be with you", auteur: "Obi-Wan Kenobi" },
+    { texte: "To infinity and beyond!", auteur: "Buzz Lightyear" }
+  ];
+
   return (
-    <div>
-      <Quote text={citation1.text} author={citation1.author} />
-      <Quote text={citation2.text} author={citation2.author} />
+    <div className="App">
+      <h1>
+        Mes citations !
+      </h1>
+      {citations.map((citation, index) => (
+        <Quote key={index} texte={citation.texte} auteur={citation.auteur} />
+      ))}
     </div>
   );
 }
 
 export default App;
-
