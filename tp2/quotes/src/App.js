@@ -5,10 +5,10 @@ import quotes from './Data/data';
 function Quote(props) {
   return (
     <>
-      <div class="textecita">
+      <div className="textecita">
         Texte : {props.text}
       </div>
-      <div  class="authorcita">
+      <div  className="authorcita">
         Auteur : {props.author}
       </div>
       <br/>
@@ -25,7 +25,7 @@ function App() {
         Mes citations !
       </h1>
       {quotes.map((quote) => (
-        <Quote {...quote} />
+        <Quote key={quote.id} {...quote} />
       ))}
     </div>
   );
